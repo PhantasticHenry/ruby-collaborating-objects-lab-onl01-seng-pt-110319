@@ -26,8 +26,8 @@ class Song
     # song = file.split(" - ")[1]
     artist, song = file.split(" - ")
     # new_song = Song.new(song)
-    # new_song.artist_name = artist 
-    # new_song
+    new_song.artist_name = artist 
+    new_song
   end
   
   ## accepts an artist's name, finds or creates an Artist instance and assigns it to the Song's artist attribute
