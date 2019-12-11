@@ -25,15 +25,15 @@ class Song
     # artist = file.split(" - ")[0]
     # song = file.split(" - ")[1]
     artist, song = file.split(" - ")
-    # new_song = Song.new(song)
+    new_song = Song.new(song)
     new_song.artist_name = artist 
     new_song
   end
   
   ## accepts an artist's name, finds or creates an Artist instance and assigns it to the Song's artist attribute
-  # def artist_name=(name)
-  #   self.artist = Artist.find_or_create_by_name(name)
-  # end 
+  def artist_name=(name)
+    self.artist = Artist.find_or_create_by_name(name)
+  end 
 end
 
 
